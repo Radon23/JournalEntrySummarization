@@ -1,0 +1,15 @@
+{
+	"builds":[
+		{
+			"src":"API/Text_Summary_API.py",
+			"use":"@vercel/python"
+		}
+	],
+	"routes":[
+		{
+			"src":"/(.*)",
+			"dest":"API/Text_Summary_API.py"
+		}
+
+	]
+}
